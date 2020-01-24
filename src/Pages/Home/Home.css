@@ -1,0 +1,12 @@
+.Home {
+    height: 100vh;    
+    background-color: black;
+    color: white;
+    
+}
+
+.Home-Title {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 10%;
+}

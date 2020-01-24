@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import NotFound from "./Components/NotFound/NotFound.js";
+import Home from "./Pages/Home/Home.js";
+import "./App.css";
+
+class App extends React.Component {
+  state = { profile: null }
+
+  setProfile = (user) => { this.setState({profile: user}) }
+
+  render() {
+    return (  
+      <Router>
+      <React.Fragment>
+        <Switch> 
+          <Route exact path="/" render={props => (<Home {...props} profile={this.state.profile} setProfileRoot={this.setProfile}/>)} />
+          <Route component={NotFound} />
+        </Switch>
+      </React.Fragment>
+    </Router>
+    )
+  }
 }
 
 export default App;

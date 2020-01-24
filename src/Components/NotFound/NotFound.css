@@ -1,0 +1,12 @@
+.NotFound {
+    height: 100vh;    
+    background-color: black;
+    color: white;
+    
+}
+
+.NF-Title {
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 10%;
+}
