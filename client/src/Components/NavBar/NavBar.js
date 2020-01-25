@@ -5,7 +5,7 @@ import "./NavBar.css";
 export default class Navbar extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { activeItem: 'home' };
+		this.state = { activeItem: 'home', userLogin: "Login" };
 	}
 
 	componentDidMount() {
@@ -13,9 +13,11 @@ export default class Navbar extends Component {
 	}
 
 	handleItemClick = (e, { name }) => {
-		this.setState({ activeItem: name })
+		
 		console.log("PROPS: ", this.props)
 		this.props.NavPage(name)
+
+		name == "Login" ? this.setState({userLogin: "Logout"}) : name == "Logout" ? this.setState({userLogin: "Login"}) : this.setState({ activeItem: name })
 	}
 
 	render() {
@@ -26,7 +28,7 @@ export default class Navbar extends Component {
 				<Menu secondary>
 					<Menu.Item
 						name='Home'
-						active={activeItem === 'home'}
+						active={activeItem === 'Home'}
 						onClick={this.handleItemClick}
 					/>
 					<Menu.Item
@@ -38,8 +40,8 @@ export default class Navbar extends Component {
 					<Menu.Menu position='right'>
 						
 						<Menu.Item
-							name='logout'
-							active={activeItem === 'logout'}
+							name={this.state.userLogin}
+							active={activeItem === this.state.userLogin}
 							onClick={this.handleItemClick}
 						/>
 						

@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./Etext.css";
-import NavBar from "../../Components/NavBar/NavBar.js"
+
 import Modal from "./Components/Modal/Modal.js";
 
 class Etext extends Component {
@@ -57,8 +57,6 @@ class Etext extends Component {
 
 		return ( 
 			<div className="Etext"> 
-				<NavBar NavPage={this.props.HomePage} /> 
-
 				<div className="Etext-Title"> Etext </div> 
 
 

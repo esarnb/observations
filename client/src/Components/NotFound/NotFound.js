@@ -1,9 +1,10 @@
 import React from "react";
 import "./NotFound.css";
 
-function NotFound() { 
+function NotFound(props) { 
     return (
         <div className = "NotFound">
+
             <div className="NF-Title">NotFound</div>
         </div>
     ) 

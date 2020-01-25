@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import NotFound from "./Components/NotFound/NotFound.js";
 import Home from "./Pages/Home/Home.js";
 import Etext from "./Pages/Etext/Etext.js";
+
+import NavBar from "./Components/NavBar/NavBar.js"
+import NotFound from "./Components/NotFound/NotFound.js";
 import "./App.css";
 
 class App extends React.Component {
@@ -13,9 +15,11 @@ class App extends React.Component {
 
 	AppPage = (page) => {
 		switch(page) {
-			case "Etext": this.setState({page: <Etext HomePage={this.AppPage}/>}); break;
-			case "Projects": this.setState({page: <NotFound />}); break;
-      default: this.setState({page: <Home profile={this.state.profile} setProfileRoot={this.setProfile} HomePage={this.AppPage}/>})
+			case "Etext": this.setState({page: <Etext />}); break;
+      case "Projects": this.setState({page: <NotFound />}); break;
+      case "Login": this.setState({page: <NotFound />}); break;
+      case "Logout": this.setState({profile: null, page: <NotFound />}); // no break;
+      default: this.setState({page: <Home profile={this.state.profile} setProfileRoot={this.setProfile} />})
 		}
 	}
 
@@ -23,6 +27,7 @@ class App extends React.Component {
     return (  
       <Router>
       <React.Fragment>
+        <NavBar NavPage={this.AppPage} />
         <Switch> 
           <Route exact path="/" render={() => (this.state.page || this.AppPage()) } />
           <Route component={NotFound} />

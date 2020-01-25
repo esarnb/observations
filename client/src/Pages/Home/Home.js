@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import "./Home.css";
 
-import NavBar from "../../Components/NavBar/NavBar.js"
-// import Footer from "../../Components/Footer/Footer.js"
 import Modal from "../../Components/Modal/Modal.js";
 
 class Home extends Component {
@@ -28,7 +26,6 @@ class Home extends Component {
 		
 		return ( 
 			<div className="Home"> 
-				<NavBar NavPage={this.props.HomePage} /> 
 				<div className="Home-Title Center"> 
 					Home 
 					<br /> <br /> <br /> 
