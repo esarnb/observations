@@ -24,8 +24,7 @@ class App extends React.Component {
       <Router>
       <React.Fragment>
         <Switch> 
-        <Route exact path="/" render={() => (this.state.page || this.AppPage()) } />
-        <Route exact path="/etext" render={() => (<Etext />)} />
+          <Route exact path="/" render={() => (this.state.page || this.AppPage()) } />
           <Route component={NotFound} />
         </Switch>
       </React.Fragment>
