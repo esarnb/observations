@@ -1,15 +1,12 @@
-.Home {
+.Etext {
     height: 100vh;    
     background-color: black;
     color: white;
     
 }
 
-.Home-Title {
-    font-size: xx-large;
-    padding-top: 5%;
-}
-
-.Center {
+.Etext-Title {
     text-align: center;
+    font-size: xx-large;
+    padding-top: 10%;
 }
