@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import "./Home.css";
 
 import Modal from "../../Components/Modal/Modal.js";
+// import Card from "../../Components/Card/Card.js";
+import HomeCards from "./HomeCards/HomeCards.js"
 
 class Home extends Component {
 	constructor(props) {
@@ -23,6 +25,45 @@ class Home extends Component {
 			content: [<div>Some text content for a line.</div>, <div>Another set of content for the next line.</div>],
 		}
 
+		// const cardsData = [
+		// 	{
+		// 		hoverButton: {
+		// 				name: "btn 1",
+		// 				func: () => alert("Hello")
+		// 		},
+		// 		img: "https://iconsplace.com/wp-content/uploads/_icons/fa8072/256/png/letter-x-icon-15-256.png",
+		// 		header: "Header",
+		// 		body: "Body",
+		// 		footer: "Footer",
+		// 		alt: "alt"
+		// 	},
+		// 	{
+		// 		hoverButton: {
+		// 				name: "btn 2",
+		// 				func: () => alert("Hello")
+		// 		},
+		// 		img: "https://iconsplace.com/wp-content/uploads/_icons/fa8072/256/png/letter-x-icon-15-256.png",
+		// 		header: "Header",
+		// 		body: "Body",
+		// 		footer: "Footer",
+		// 		alt: "alt"
+		// 	},
+		// 	{
+		// 		hoverButton: {
+		// 				name: "btn 3",
+		// 				func: () => alert("Hello")
+		// 		},
+		// 		img: "https://iconsplace.com/wp-content/uploads/_icons/fa8072/256/png/letter-x-icon-15-256.png",
+		// 		header: "Header",
+		// 		body: "Body",
+		// 		footer: "Footer",
+		// 		alt: "alt"
+		// 	}
+		// ]
+
+		// $('.special.cards .image').dimmer({
+		// 	on: 'hover'
+		// });
 		
 		return ( 
 			<div className="Home"> 
@@ -31,6 +72,10 @@ class Home extends Component {
 					<br /> <br /> <br /> 
 					<Modal modal={homeModal} />
 				</div> 
+				<div className="rowCardsHome">
+					<HomeCards />
+					{/* {cardsData.map((x,i) => <Card className="homeCards" data={x} key={"CardsHome#"+i} />)}	 */}
+				</div>
 			</div> 
 		)
 	};

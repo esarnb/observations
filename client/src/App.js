@@ -17,8 +17,8 @@ class App extends React.Component {
 		switch(page) {
 			case "Etext": this.setState({page: <Etext />}); break;
       case "Projects": this.setState({page: <NotFound />}); break;
-      case "Login": this.setState({page: <NotFound />}); break;
-      case "Logout": this.setState({profile: null, page: <NotFound />}); // no break;
+      case "Login": this.setState({page: <Home />}); break;
+      case "Logout": this.setState({profile: null, page: <NotFound />}); break;
       default: this.setState({page: <Home profile={this.state.profile} setProfileRoot={this.setProfile} />})
 		}
 	}
