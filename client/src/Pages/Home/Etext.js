@@ -43,6 +43,7 @@ class Etext extends Component {
 						totalPages={Book.length - 1}
 						onPageChange={this.handlePaginationChange}
 						className="paging" />
+						<br />
 				</div>
 
 			</div>

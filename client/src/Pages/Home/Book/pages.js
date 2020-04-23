@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import words from "../Book/defintions.js"
+import words from "./defintions.js"
 
 import Modal from "../Components/Modal/Modal.js";
 

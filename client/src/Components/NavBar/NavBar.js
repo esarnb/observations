@@ -13,11 +13,8 @@ export default class Navbar extends Component {
 	}
 
 	handleItemClick = (e, { name }) => {
-		
-		console.log("PROPS: ", this.props)
-		this.props.NavPage(name)
-
-		// name === "Login" ? this.setState({userLogin: "Logout"}) : name === "Logout" ? this.setState({userLogin: "Login"}) : this.setState({ activeItem: name })
+		// <Redirect><Link /></Redirect>
+		return window.location.reload();
 	}
 
 	render() {
@@ -26,14 +23,14 @@ export default class Navbar extends Component {
 		return (
 			<div className="NavBar">
 				<Menu secondary>
-					<Menu.Item
+					{/* <Menu.Item
 						name='Home'
 						active={activeItem === 'Home'}
-						onClick={this.handleItemClick}
+						// onClick={this.handleItemClick}
 						inverted color='teal'
 						style={{color: navBtnColor}}
 
-					/>
+					/> */}
 					<Menu.Item
 						name='Etext'
 						active={activeItem === 'Etext'}
