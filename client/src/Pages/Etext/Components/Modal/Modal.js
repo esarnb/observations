@@ -1,26 +1,12 @@
 import React from 'react'
 import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react'
 
-/**
- * Usage
- * 
- * <Modal modal={{
-    text: "text",
-    header: "header",
-    title: "title",
-    img: "https://www.some.image.com/img.png",
-    imgHeight: "300",
-    imgWidth: "300",
-    content: [component contents],
-  }}/>
- */
-
 export default class ModalScroll extends React.Component {
 
   constructor(props) {
-		super(props);
-		this.state = { modalOpen: false }; 
-	}
+    super(props);
+    this.state = { modalOpen: false };
+  }
 
   handleOpen = () => this.setState({ modalOpen: true })
 
@@ -28,21 +14,19 @@ export default class ModalScroll extends React.Component {
 
   render() {
     return (
-      <Modal 
-        trigger={<a onClick={this.handleOpen}>{this.props.modal.text}</a>}
-        open={this.state.modalOpen}
-        onClose={this.handleClose}
-      >
-        <Modal.Header>{this.props.modal.header}</Modal.Header>
+      <Modal trigger={<button style={{ textDecoration: "underline", backgroundColor: "transparent", borderColor: "transparent", color: "lightblue", padding: 0 }} onClick={this.handleOpen}>{this.props.modal.text}</button>} open={this.state.modalOpen} onClose={this.handleClose}>
+
+        <Modal.Header>{this.props.modal.text}</Modal.Header>
         <Modal.Content image>
-        <Image wrapped/>
+          <Image wrapped />
           <Modal.Description>
             <Header>{this.props.modal.title}</Header>
-              <Image wrapped floated='left' src={this.props.modal.img} size={this.props.modal.imgSize}/>
-              <p>{this.props.modal.content}</p>
+            <Image wrapped floated='left' src={this.props.modal.img} size={this.props.modal.imgSize} />
+            <p>{this.props.modal.content}</p>
           </Modal.Description>
         </Modal.Content>
         <Modal.Actions>
+          <p style={{ float: "left", fontSize: "small" }}>Source: <a href={this.props.modal.src} target="_blank" rel="noopener noreferrer" >{this.props.modal.src}</a> </p>
           <Button primary onClick={this.handleClose}>
             Continue <Icon name='right chevron' />
           </Button>

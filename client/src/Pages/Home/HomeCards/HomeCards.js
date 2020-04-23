@@ -3,26 +3,26 @@ import { Card } from 'semantic-ui-react'
 
 const items = [
   {
-    header: 'Project Report - April',
+    header: 'Project 1',
     description:
-      'Leverage agile frameworks to provide a robust synopsis for high level overviews.',
-    meta: 'ROI: 30%',
+      'First ReactJS Portfolio',
+    meta: 'ReactJS Using Ant Design',
     image: "https://i.pinimg.com/originals/f5/44/16/f544169a4f8c9b7a1c4403547e714837.jpg",
     
   },
   {
-    header: 'Project Report - May',
+    header: 'Day 1',
     description:
-      'Bring to the table win-win survival strategies to ensure proactive domination.',
-    meta: 'ROI: 34%',
+      'First day in the travels of person from place to place.',
+    meta: 'meta information',
     image: "https://i.pinimg.com/originals/f5/44/16/f544169a4f8c9b7a1c4403547e714837.jpg",
 
   },
   {
-    header: 'Project Report - June',
+    header: 'Day 2',
     description:
-      'Capitalise on low hanging fruit to identify a ballpark value added activity to beta test.',
-    meta: 'ROI: 27%',
+      'Second day in the lifespan of a species.',
+    meta: '2% of 100% in lifespan',
     image: "https://i.pinimg.com/originals/f5/44/16/f544169a4f8c9b7a1c4403547e714837.jpg",
 
   },

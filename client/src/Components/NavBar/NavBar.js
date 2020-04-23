@@ -17,7 +17,7 @@ export default class Navbar extends Component {
 		console.log("PROPS: ", this.props)
 		this.props.NavPage(name)
 
-		name === "Login" ? this.setState({userLogin: "Logout"}) : name === "Logout" ? this.setState({userLogin: "Login"}) : this.setState({ activeItem: name })
+		// name === "Login" ? this.setState({userLogin: "Logout"}) : name === "Logout" ? this.setState({userLogin: "Login"}) : this.setState({ activeItem: name })
 	}
 
 	render() {
@@ -43,7 +43,7 @@ export default class Navbar extends Component {
 
 					/>
 					
-					<Menu.Menu position='right'>
+					{/* <Menu.Menu position='right'>
 						
 						<Menu.Item
 							name={this.state.userLogin}
@@ -52,7 +52,7 @@ export default class Navbar extends Component {
 							style={{color: navBtnColor}}
 						/>
 						
-					</Menu.Menu>
+					</Menu.Menu> */}
 				</Menu>
 			</div>
 		)

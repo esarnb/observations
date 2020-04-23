@@ -12,13 +12,12 @@ class App extends React.Component {
   state = { profile: null, page: null }
 
   setProfile = (user) => { this.setState({profile: user}) }
-
 	AppPage = (page) => {
 		switch(page) {
 			case "Etext": this.setState({page: <Etext />}); break;
       case "Projects": this.setState({page: <NotFound />}); break;
-      case "Login": this.setState({page: <Home />}); break;
-      case "Logout": this.setState({profile: null, page: <NotFound />}); break;
+      // case "Login": this.setState({page: <Home />}); break;
+      // case "Logout": this.setState({profile: null, page: <NotFound />}); break;
       default: this.setState({page: <Home profile={this.state.profile} setProfileRoot={this.setProfile} />})
 		}
 	}
@@ -30,6 +29,7 @@ class App extends React.Component {
         <NavBar NavPage={this.AppPage} />
         <Switch> 
           <Route exact path="/" render={() => (this.state.page || this.AppPage()) } />
+          <Route exact path="/bartram" render={() => <Etext /> } />
           <Route component={NotFound} />
         </Switch>
       </React.Fragment>

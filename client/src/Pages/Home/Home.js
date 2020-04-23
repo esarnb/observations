@@ -17,7 +17,7 @@ class Home extends Component {
 	
 	render() { 
 		const homeModal = {
-			text: "Home Modal",
+			text: "Modal Popup",
 			header: "Home Header",
 			title: "Home Title",
 			img: "https://i.pinimg.com/originals/f5/44/16/f544169a4f8c9b7a1c4403547e714837.jpg",
@@ -68,12 +68,13 @@ class Home extends Component {
 		return ( 
 			<div className="Home"> 
 				<div className="Home-Title Center"> 
-					Home 
+					Landing page.
 					<br /> <br /> <br /> 
 					<Modal modal={homeModal} />
 				</div> 
 				<div className="rowCardsHome">
-					<HomeCards />
+					{/* <HomeCards /> */}
+
 					{/* {cardsData.map((x,i) => <Card className="homeCards" data={x} key={"CardsHome#"+i} />)}	 */}
 				</div>
 			</div> 

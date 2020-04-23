@@ -1,12 +1,59 @@
+.center {
+    text-align: center;
+}
+
 .Etext {
-    height: 100vh;    
-    background-color: #0f2027;
+    height: auto;    
     color: white;
-    
 }
 
 .Etext-Title {
     text-align: center;
     font-size: xx-large;
-    padding-top: 10%;
+    padding-bottom: 2%;
+}
+
+.Headers {
+    padding-top: 3% !important;
+    color: white !important;
+}
+
+.mainPage {
+    line-height: 1.5;
+}
+
+.pageText {
+    font-size: medium;
+}
+
+.paging {
+    position: fixed;
+    top: 100;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto !important;
+    width: fit-content !important;
+}
+
+.centerDiv {
+    margin: auto;
+    width: 25%;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.Etext, .centerDiv, Pagination {
+    overflow: hidden;
+}
+
+.Contents {
+    /* color: white; */
+    width: 60% !important;
+    overflow: auto;
+    /* height: 60% !important; */
+    height: 60vh;
+    /* padding-right: 10%; */
 }
