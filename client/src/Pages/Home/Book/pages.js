@@ -8,7 +8,7 @@ import Modal from "../Components/Modal/Modal.js";
 const Book = [0,
     <Fragment>
         <br /><br /><br />
-        <h2 className="center mainPage"> Oservations on the inhabitants, climate, soil, rivers, productions, animals, and other matters worthy of notice made by Mr. John Bartram, in his travels from Pensilvania [sic] to Onondago, Oswego and the Lake Ontario, in Canada: to which is annex'd a curious account of the cataracts at Niagara.</h2>
+        <h2 className="center mainPage"> Observations on the inhabitants, climate, soil, rivers, productions, animals, and other matters worthy of notice made by Mr. John Bartram, in his travels from Pensilvania [sic] to Onondago, Oswego and the Lake Ontario, in Canada: to which is annex'd a curious account of the cataracts at Niagara.</h2>
         <h3 className="center mainPage"> <br /> By Mr. Peter Kalm, A Swedifh Gentleman who travelled there.<br /> </h3>
     </Fragment>,
     <p className="pageText center">The 3<sup>d</sup> day of July 1743, I fet out from my houfe on Skuylkil River, with Lewis Evans, and travelled beyond Perkiomy Creek the firft day.<br /> <br />The weather was exceeding hot.</p>,

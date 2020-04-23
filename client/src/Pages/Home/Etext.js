@@ -15,7 +15,7 @@ class Etext extends Component {
 
 		return (
 			<div className="Etext">
-				{this.state.activePage > 1 ? <Header as="h2" className="Headers center"> Day {parseInt(this.state.activePage) - 1} - <a href="https://tourbuilder.withgoogle.com/tour/ahJzfmd3ZWItdG91cmJ1aWxkZXJyEQsSBFRvdXIYgIDgmOCh0QoM">Tour</a> <h2 className="center Etext-Title">Observations made by John Bartram.</h2> </Header> : <br />}
+				{this.state.activePage > 1 ? <Header as="h2" className="Headers center"> Day {parseInt(this.state.activePage) - 1} - <a href="https://tourbuilder.withgoogle.com/tour/ahJzfmd3ZWItdG91cmJ1aWxkZXJyEQsSBFRvdXIYgIDgmOCh0QoM"  target="_blank" rel="noopener noreferrer">Tour</a> <h2 className="center Etext-Title">Observations made by John Bartram.</h2> </Header> : <br />}
 				<Container fluid className="Contents"> {Book[this.state.activePage]} </Container>
 
 				<div className="centerDiv">

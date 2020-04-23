@@ -3,6 +3,13 @@ html, body {
     background-image: url("./pattern.jpg");
 }
 
+/* 
+
+font-family: 'Courgette', cursive;
+
+kalam, sacramento, courgette, handlee, meriedna
+
+*/
 
 .center {
     text-align: center;
@@ -24,12 +31,16 @@ html, body {
     color: white !important;
 }
 
-.mainPage {
-    line-height: 1.5;
+.mainPage, .Etext-Title {
+    line-height: 2;
+    font-family: 'Courgette', cursive;
+
 }
 
 .pageText {
     font-size: medium;
+    font-family: 'Meriedna', cursive;
+    line-height: 2;
 }
 
 .paging {
