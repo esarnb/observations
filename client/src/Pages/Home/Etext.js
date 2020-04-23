@@ -9,31 +9,16 @@ class Etext extends Component {
 		this.state = { activePage: 1 };
 	}
 
-	componentDidMount() {
-
-	}
-
-	handlePaginationChange = (e, { activePage }) => {
-		console.log(e);
-		console.log(activePage);
-		this.setState({ activePage })
-
-	}
+	handlePaginationChange = (e, { activePage }) => { this.setState({ activePage }) }
 
 	render() {
 
 		return (
 			<div className="Etext">
-				{/* <Header as='h2' className="Etext-Title center">Observations made by John Bartram.</Header> */}
 				{this.state.activePage > 1 ? <Header as="h2" className="Headers center"> Day {parseInt(this.state.activePage) - 1} - <a href="https://tourbuilder.withgoogle.com/tour/ahJzfmd3ZWItdG91cmJ1aWxkZXJyEQsSBFRvdXIYgIDgmOCh0QoM">Tour</a> <h2 className="center Etext-Title">Observations made by John Bartram.</h2> </Header> : <br />}
-
-				<Container fluid className="Contents">
-					{Book[this.state.activePage]}
-					{/* <p className="textscript" style={{overflow: "auto"}}>{Book[this.state.activePage]}</p> */}
-				</Container>
+				<Container fluid className="Contents"> {Book[this.state.activePage]} </Container>
 
 				<div className="centerDiv">
-
 					<Pagination defaultActivePage={this.state.activePage}
 						ellipsisItem={{ content: <Icon name='ellipsis horizontal' />, icon: true }}
 						firstItem={{ content: <Icon name='angle double left' />, icon: true }}
@@ -43,9 +28,7 @@ class Etext extends Component {
 						totalPages={Book.length - 1}
 						onPageChange={this.handlePaginationChange}
 						className="paging" />
-						<br />
 				</div>
-
 			</div>
 		)
 	};

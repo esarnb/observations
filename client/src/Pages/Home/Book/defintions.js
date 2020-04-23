@@ -16,7 +16,6 @@ wordName: {
  */
     fernTree: {
         text: "fern",
-        
         title: "Fern Tree",
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Rainforest_near_Belle_-_Dominica.jpg/330px-Rainforest_near_Belle_-_Dominica.jpg",
         imgSize: "small",
@@ -50,18 +49,6 @@ wordName: {
         src: ""
     },
 
-    lamb: {
-        text: "lamb",
-        title: "A young sheep",
-        img: "https://i.pinimg.com/originals/6c/d4/0b/6cd40b02efc9d1291e616da3868108be.jpg",
-        imgSize: "small",
-        content: [
-            <p>Sheep (Ovis aries) are quadrupedal, ruminant mammals typically kept as livestock. Like most ruminants, sheep are members of the order Artiodactyla, the even-toed ungulates. Although the name sheep applies to many species in the genus Ovis, in everyday usage it almost always refers to Ovis aries. Numbering a little over one billion, domestic sheep are also the most numerous species of sheep. An adult female is referred to as a ewe, an intact male as a ram, occasionally a tup, a castrated male as a wether, and a young sheep is a lamb.</p>, 
-            <p>Sheep are most likely descended from the wild mouflon of Europe and Asia and one of the earliest animals to be domesticated for agricultural purposes, sheep are raised for fleeces, meat (lamb, hogget or mutton) and milk. A sheep's wool is the most widely used animal fiber, and is usually harvested by shearing. Ovine meat is called lamb when from younger animals and mutton when from older ones in Commonwealth countries, and lamb in the United States (including from adults). Sheep continue to be important for wool and meat today, and are also occasionally raised for pelts, as dairy animals, or as model organisms for science.</p>
-        ],
-        src: ""
-    },
-
     puppy: {
         text: "puppy",
         title: "A young dog",
@@ -89,6 +76,4 @@ wordName: {
         ],
         src: ""
     }
-
-
 }
