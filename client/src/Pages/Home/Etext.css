@@ -15,6 +15,10 @@ kalam, sacramento, courgette, handlee, meriedna
     text-align: center;
 }
 
+quote {
+    font-style: italic;
+}
+
 .Etext {
     height: auto;    
     color: white;
