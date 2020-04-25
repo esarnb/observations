@@ -194,6 +194,31 @@ wordName: {
         src: "https://www.almanac.com/plant/peaches"
     },
 
+    whiteWalnut: {
+        text: "white walnut",
+        title: "Juglans cinerea (White Walnut, Butternut) ",
+        img: "https://upload.wikimedia.org/wikipedia/commons/6/68/Juglans_cinerea.jpg",
+        imgSize: "medium",
+        content: [
+            <p>Native to the Eastern United states and Southern Canada, the White Walnut tree is a deciduous tree.</p>,
+            <p>Growing to 20 meters (66 ft) tall, the tree can live longer than 75 years.</p>,
+            <p>The fruit is a nut, coming in pairs of 2 to 6 with a greenish cover to them.</p>,
+        ],
+        src: "https://en.wikipedia.org/wiki/Juglans_cinerea"
+    },
+
+    locust: {
+        text: "locust",
+        title: "Gleditsia triacanthos (Locust)",
+        img: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Honey_locust_%28leaf_and_seed_pod%29_%28line_art%29_%28PSF_H-440008_%28cropped%29%29.png",
+        imgSize: "small",
+        content: [
+            <p>Found naturally in Southwestern Pennsylvania, the locust comes in black and honey locusts. For honey locusts, their leaves are about 7 to 8 inches long, with stout, shiny and reddish twigs. </p>,
+            <p>Their fruit is shaped as a leathery pod with dark brown oval seeds, and pods containing sweetish, gummy pulp. </p>,
+        ],
+        src: "http://www.docs.dcnr.pa.gov/cs/groups/public/documents/document/dcnr_20029752.pdf"
+    },
+    
     word: {
         text: "word",
         title: "text",
